@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f8f8;
+    height: 300vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.landing-div {
+    font-family: 'Montserrat', sans-serif;
+}
+.landing-title {
+    font-weight: 200;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.landing-div p {
+    font-weight: 200;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title1 {
+    width: 98vw;
+    text-align: center
+}
+
+.title2 {
+    width: 92vw;
+    text-align: center;
+}
+
+.second-seg-background-wrapper {
+    position: absolute;
+    background-color: #8954ba;
+    width: 100%;
+    height: 100vh;
+    top: 100vh;
+    z-index: 9999;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.why-emedic {
+    font-weight: 200;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    color: #f8f8f8;
+}
+
+.check-price-btn {
+    position: absolute;
+    left: 50%;
+    top: 75vh;
+    transform: translate(-50%, -50%) scale(1);
+    white-space: nowrap;
+    cursor: pointer;
+    padding: 0.5em 1em 0.5em 1em;
+    background-color: #aa80cf;
+    border-radius: 30px;
+    color: #f8f8f8;
+    font-weight: 200;
+    transition: transform ease-out 0.2s;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.check-price-btn:hover {
+    transform: translate(-50%, -50%) scale(1.08)
+}
+
+.down-btn {
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    left: 50%;
+    top: 88vh;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.why-emedic-table {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 95vw;
+    top: 16%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #f8f8f8;
+}
+
+@media screen and (min-width: 500px) {
+    .landing-title {
+        font-size: 8.5vw;
+    }
+
+    .landing-div p {
+        font-size: 2.5vw;
+    }
+
+    .title1 {
+        margin-top: 1.5em;
+    }
+
+    .title2 {
+        margin-top: 5.0em;
+    }
+
+    .why-emedic {
+        margin-top: 0.5em;
+        font-size: 7vw;
+    }
+
+    .down-btn {
+        width: 4em;
+        height: 4em;
+    }
+
+    .check-price-btn {
+        margin-top: 1em;
+        font-size: 2.0em;
+    }
+    
+    .why-emedic-table {
+        margin-top: 5em;
+        width: 80vw;
+    }
+
+    .emedic-icons {
+        display: inline-block;
+        text-align: center;
+        width: 15vw;
+        margin: 0.25em 0.25em 0.25em 0.25em;
+    }
+
+    .emedic-icons svg {
+        width: 8vw;
+        height: auto;
+    }
+    
+    .emedic-icons span {
+        display: block;
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .landing-title {
+        top: 28%;
+        font-size: 13.5vw;
+        white-space: normal;
+        text-align: center;
+        width: 95vw;
+    }
+
+    .landing-div p {
+        font-size: 4.8vw;
+    }
+
+    .title1 {
+        margin-top: 0.8em;
+    }
+    
+    .title2 {
+        margin-top: 6.8em;
+    }
+
+    .why-emedic {
+        font-size: 12vw;
+    }
+
+    .down-btn {
+        width: 3.5em;
+        height: 3.5em;
+    }
+
+    .down-btn-svg {
+        width: 3.5em;
+    }
+
+    .check-price-btn {
+        margin-top: 1em;
+        font-size: 1.5em;
+    }
+
+    .why-emedic-table {
+        width: 80vw;
+        height: 100vw;
+    }
+
+    .emedic-icons {
+        display: inline-block;
+        text-align: center;
+        width: 22vw;
+        height: 22vw;
+        margin: 5vw 0 5vw 0;
+    }
+
+    .emedic-icons svg {
+        width: 16vw;
+        height: 16vw;
+    }
+    
+    .emedic-icons span {
+        display: block;
+        font-size: 3vw;
+    }
+}
